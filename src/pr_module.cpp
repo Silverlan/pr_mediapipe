@@ -24,6 +24,21 @@ DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 	libMediapipe[luabind::def("get_hand_landmark_name", &mpw::get_hand_landmark_name)];
 	libMediapipe[luabind::def("get_hand_landmark_enum", &mpw::get_hand_landmark_enum)];
 
+	auto classDefSmoothFilter = luabind::class_<mpw::SmoothingFilterSettings>("SmoothingFilterSettings");
+	classDefSmoothFilter.def(
+	  "__tostring", +[](const mpw::SmoothingFilterSettings &smoothingFilterSettings) -> std::string {
+		  std::stringstream ss;
+		  ss << "MPWSmoothingFilterSettings";
+		  return ss.str();
+	  });
+	classDefSmoothFilter.def_readwrite("beta", &mpw::SmoothingFilterSettings::beta);
+	classDefSmoothFilter.def_readwrite("disableValueScaling", &mpw::SmoothingFilterSettings::disableValueScaling);
+	classDefSmoothFilter.def_readwrite("frequency", &mpw::SmoothingFilterSettings::frequency);
+	classDefSmoothFilter.def_readwrite("minCutoff", &mpw::SmoothingFilterSettings::minCutoff);
+	classDefSmoothFilter.def_readwrite("derivateCutoff", &mpw::SmoothingFilterSettings::derivateCutoff);
+	classDefSmoothFilter.def_readwrite("minAllowedObjectScale", &mpw::SmoothingFilterSettings::minAllowedObjectScale);
+	libMediapipe[classDefSmoothFilter];
+
 	auto classDefLm = luabind::class_<mpw::MotionCaptureManager::LandmarkData>("LandmarkData");
 	classDefLm.def(
 	  "__tostring", +[](const mpw::MotionCaptureManager::LandmarkData &landmarkData) -> std::string {
@@ -43,6 +58,17 @@ DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 	libMediapipe[classDefLm];
 
 	auto classDef = luabind::class_<mpw::MotionCaptureManager>("MotionCaptureManager");
+	auto defCreationInfo = luabind::class_<mpw::MotionCaptureManager::CreationInfo>("CreationInfo");
+	defCreationInfo.def(
+	  "__tostring", +[](const mpw::MotionCaptureManager::CreationInfo &creationInfo) -> std::string {
+		  std::stringstream ss;
+		  ss << "MPWCreationInfo";
+		  return ss.str();
+	  });
+	defCreationInfo.def(luabind::constructor<>());
+	defCreationInfo.def_readwrite("enabledOutputs", &mpw::MotionCaptureManager::CreationInfo::enabledOutputs);
+	defCreationInfo.def_readwrite("smoothingFilterSettings", &mpw::MotionCaptureManager::CreationInfo::smoothingFilterSettings);
+	classDef.scope[defCreationInfo];
 	classDef.def(
 	  "__tostring", +[](const mpw::MotionCaptureManager &capMan) -> std::string {
 		  std::stringstream ss;
@@ -50,25 +76,25 @@ DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 		  return ss.str();
 	  });
 	classDef.scope[luabind::def(
-	  "create_from_image", +[](lua_State *l, const std::string &source, mpw::MotionCaptureManager::Output outputs) -> Lua::var<mpw::MotionCaptureManager, std::pair<bool, std::string>> {
+	  "create_from_image", +[](lua_State *l, const std::string &source, mpw::MotionCaptureManager::CreationInfo &creationInfo) -> Lua::var<mpw::MotionCaptureManager, std::pair<bool, std::string>> {
 		  std::string err;
-		  auto manager = mpw::MotionCaptureManager::CreateFromImage(source, err, outputs);
+		  auto manager = mpw::MotionCaptureManager::CreateFromImage(source, err, creationInfo);
 		  if(!manager)
 			  return luabind::object {l, std::pair<bool, std::string> {false, err}};
 		  return luabind::object {l, manager};
 	  })];
 	classDef.scope[luabind::def(
-	  "create_from_video", +[](lua_State *l, const std::string &source, mpw::MotionCaptureManager::Output outputs) -> Lua::var<mpw::MotionCaptureManager, std::pair<bool, std::string>> {
+	  "create_from_video", +[](lua_State *l, const std::string &source, mpw::MotionCaptureManager::CreationInfo &creationInfo) -> Lua::var<mpw::MotionCaptureManager, std::pair<bool, std::string>> {
 		  std::string err;
-		  auto manager = mpw::MotionCaptureManager::CreateFromVideo(source, err, outputs);
+		  auto manager = mpw::MotionCaptureManager::CreateFromVideo(source, err, creationInfo);
 		  if(!manager)
 			  return luabind::object {l, std::pair<bool, std::string> {false, err}};
 		  return luabind::object {l, manager};
 	  })];
 	classDef.scope[luabind::def(
-	  "create_from_camera", +[](lua_State *l, mpw::CameraDeviceId devId, mpw::MotionCaptureManager::Output outputs) -> Lua::var<mpw::MotionCaptureManager, std::pair<bool, std::string>> {
+	  "create_from_camera", +[](lua_State *l, mpw::CameraDeviceId devId, mpw::MotionCaptureManager::CreationInfo &creationInfo) -> Lua::var<mpw::MotionCaptureManager, std::pair<bool, std::string>> {
 		  std::string err;
-		  auto manager = mpw::MotionCaptureManager::CreateFromCamera(devId, err, outputs);
+		  auto manager = mpw::MotionCaptureManager::CreateFromCamera(devId, err, creationInfo);
 		  if(!manager)
 			  return luabind::object {l, std::pair<bool, std::string> {false, err}};
 		  return luabind::object {l, manager};
@@ -108,7 +134,7 @@ DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 
 	classDef.def("GetFaceGeometryCount", &mpw::MotionCaptureManager::GetFaceGeometryCount);
 	classDef.def(
-	  "GetFaceGeometry", +[](mpw::MotionCaptureManager &manager, size_t index) -> std::optional<std::pair<std::vector<Vector3>, std::vector<uint32_t>>> {
+	  "GetFaceGeometry", +[](mpw::MotionCaptureManager & manager, size_t index) -> std::optional < std::tuple<std::vector<Vector3>, std::vector<uint32_t>, std::array<float,16>>> {
 		  mpw::MeshData meshData;
 		  auto res = manager.GetFaceGeometry(index, meshData);
 		  if(!res)
@@ -120,7 +146,7 @@ DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 			  auto &v = meshData.vertices[i];
 			  verts[i] = {v[0], v[1], v[2]};
 		  }
-		  return {std::pair<std::vector<Vector3>, std::vector<uint32_t>> {verts, meshData.indices}};
+		  return {std::tuple<std::vector<Vector3>, std::vector<uint32_t>, std::array<float, 16>> {verts, meshData.indices, meshData.poseMatrix}};
 	  });
 
 	classDef.def("GetPoseCollectionCount", &mpw::MotionCaptureManager::GetPoseCollectionCount);
