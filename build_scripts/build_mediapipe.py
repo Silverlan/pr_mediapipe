@@ -109,7 +109,7 @@ if not Path(mediapipe_pragma_wrapper_root).is_dir():
 	print_msg("mediapipe_pragma_wrapper not found, downloading...")
 	git_clone("https://github.com/Silverlan/mediapipe_pragma_wrapper.git")
 os.chdir(mediapipe_pragma_wrapper_root)
-reset_to_commit("f5316c8")
+reset_to_commit("d0dba4e")
 
 # We need to make a few changes to the mediapipe files, so we'll apply a patch
 os.chdir(mediapipe_root)
