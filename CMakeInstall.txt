@@ -1,4 +1,4 @@
-SET(MEDIAPIPE_INSTALL_DIR modules/mediapipe)
+SET(MEDIAPIPE_INSTALL_DIR addons/mediapipe/modules/mediapipe)
 pragma_install_create_directory(${MEDIAPIPE_INSTALL_DIR})
 
 pragma_install_lib("${CMAKE_CURRENT_BINARY_DIR}/modules/pr_mediapipe/${PR_MODULE_INSTALL_SUBDIR}/${OS_LIB_BIN_PRE}pr_mediapipe${OS_LIB_BIN_EXT}" "${MEDIAPIPE_INSTALL_DIR}" OPTIONAL)
@@ -17,3 +17,5 @@ pragma_install_create_directory("${MEDIAPIPE_INSTALL_DIR}/mediapipe")
 pragma_install_file("${MEDIAPIPE_ASSET_DIR}/face_landmarker_v2_with_blendshapes.task" "${MEDIAPIPE_INSTALL_DIR}/mediapipe" OPTIONAL)
 pragma_install_file("${MEDIAPIPE_ASSET_DIR}/pose_landmarker.task" "${MEDIAPIPE_INSTALL_DIR}/mediapipe" OPTIONAL)
 pragma_install_file("${MEDIAPIPE_ASSET_DIR}/hand_landmarker.task" "${MEDIAPIPE_INSTALL_DIR}/mediapipe" OPTIONAL)
+
+pragma_install_directory("${CMAKE_CURRENT_LIST_DIR}/assets/" "addons/mediapipe/")

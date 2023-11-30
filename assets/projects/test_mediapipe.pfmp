@@ -1,0 +1,1485 @@
+"assetData"
+{
+	"session"
+	{
+		$string name ""
+		$array clips [element;1][
+			{
+				$array trackGroups [element;1][
+					{
+						$string name "subClipTrackGroup"
+						$bool muted 0
+						$string uniqueId "524f3bb5-c7e5-4dec-bd6f-4a4af638ef3d"
+						$bool visible 1
+						$array tracks [element;1][
+							{
+								$string name "Film"
+								$array filmClips [element;1][
+									{
+										$array trackGroups [element;1][
+											{
+												$string name "channelTrackGroup"
+												$bool muted 0
+												$string uniqueId "f336d26a-0bdb-46c9-8e0d-07d451b55b59"
+												$bool visible 1
+												$array tracks [element;1][
+													{
+														$string name "animSetEditorChannels"
+														$array filmClips [element;0][]
+														$array overlayClips [element;0][]
+														$bool muted 0
+														$array animationClips [element;0][]
+														$float volume 1
+														$string uniqueId "09ef3bb9-2d12-4052-811e-0b01d12fd6aa"
+														$array audioClips [element;0][]
+													}
+												]
+											}
+										]
+										$array bookmarkSets [element;0][]
+										"scene"
+										{
+											$string name ""
+											$string uniqueId "274d9b86-df35-4e61-b769-7a97754534f0"
+											$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+											$array actors [element;0][]
+											$bool visible 1
+											$array groups [element;5][
+												{
+													$string name "environment"
+													$string uniqueId "fa87fe2c-4ebe-49c0-8e0d-f6d81fcd4eaf"
+													$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+													$array actors [element;1][
+														{
+															$string name "sky"
+															$string uniqueId "6aee4cb5-adc1-42ae-bc46-2683ba19e3cb"
+															$array components [element;5][
+																{
+																	$string uniqueId "9cddecf8-3e08-4024-99f0-188f2cd18b5f"
+																	"properties"
+																	{
+																		$vec3 position [0,0,50]
+																		$quat rotation [1,0,0,0]
+																		$bool visible 1
+																		$vec3 scale [1,1,1]
+																		$bool static 0
+																	}
+																	$string type "pfm_actor"
+																},
+																{
+																	$string uniqueId "0b105336-510c-4e56-a297-eb65a5b179ec"
+																	"properties"
+																	{
+
+																	}
+																	$string type "skybox"
+																},
+																{
+																	$string uniqueId "734130d0-a348-4bed-8cb2-5aabd9827bdc"
+																	"properties"
+																	{
+																		$float strength 0.3
+																		$string skyTexture "skies/dusk379.hdr"
+																		$bool transparent 0
+																	}
+																	$string type "pfm_sky"
+																},
+																{
+																	$string uniqueId "2e237c8c-ec2b-4f9c-886c-f71fc5b2a51d"
+																	"properties"
+																	{
+																		$float flexControllerScale 1
+																		$bool flexControllerLimitsEnabled 1
+																		"materialOverrides"
+																		{
+
+																		}
+																	}
+																	$string type "pfm_model"
+																},
+																{
+																	$string uniqueId "2f69f683-602f-42ce-a3d4-23296cf0ad6d"
+																	"properties"
+																	{
+																		$string model "maps/empty_sky/skybox_3"
+																		$uint32 skin 0
+																	}
+																	$string type "model"
+																}
+															]
+														}
+													]
+													$bool visible 1
+													$array groups [element;0][]
+												},
+												{
+													$string name "cameras"
+													$string uniqueId "a5f2265b-12c4-4a60-b44d-301640137c42"
+													$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+													$array actors [element;1][
+														{
+															$string name "camera"
+															$string uniqueId "d16610ec-5ff6-48c7-b801-134947562345"
+															$array components [element;3][
+																{
+																	$string uniqueId "d714535e-1cae-4fe3-b1fb-2665aff4d459"
+																	"properties"
+																	{
+																		$vec3 position [0,0,50]
+																		$quat rotation [1,0,0,0]
+																		$bool visible 1
+																		$vec3 scale [1,1,1]
+																		$bool static 0
+																	}
+																	$string type "pfm_actor"
+																},
+																{
+																	$string uniqueId "bca58be4-2868-470b-a7a1-007ff6e5bda7"
+																	"properties"
+																	{
+
+																	}
+																	$string type "pfm_camera"
+																},
+																{
+																	$string uniqueId "572ac4cd-5519-4234-828a-7e35a631ed7f"
+																	"properties"
+																	{
+																		$float farz 32768
+																		$float fov 90
+																		$float nearz 1
+																		$float focalDistance 72
+																	}
+																	$string type "camera"
+																}
+															]
+														}
+													]
+													$bool visible 1
+													$array groups [element;0][]
+												},
+												{
+													$string name "baking"
+													$string uniqueId "1fce76d9-9401-4e1c-9985-e7efd995a0e8"
+													$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+													$array actors [element;2][
+														{
+															$string name "reflection_probe"
+															$string uniqueId "0501f2e0-85bf-4ed1-9956-f731eeb9a47a"
+															$array components [element;2][
+																{
+																	$string uniqueId "2d287bda-a2a4-40de-938b-a1ad1bf5ab74"
+																	"properties"
+																	{
+																		$vec3 position [0,0,50]
+																		$quat rotation [1,0,0,0]
+																		$bool visible 1
+																		$vec3 scale [1,1,1]
+																		$bool static 0
+																	}
+																	$string type "pfm_actor"
+																},
+																{
+																	$string uniqueId "b76989d9-9510-440f-aa91-81a24c8ead9e"
+																	"properties"
+																	{
+																		$float iblStrength 1.4
+																		$string iblMaterial "pbr/ibl/venice_sunset"
+																	}
+																	$string type "reflection_probe"
+																}
+															]
+														},
+														{
+															$string name "lightmapper"
+															$string uniqueId "0ebc28f0-7fc7-4df2-bd6f-97c088268805"
+															$array components [element;6][
+																{
+																	$string uniqueId "232635da-8827-42c6-be54-721f2ad0864d"
+																	"properties"
+																	{
+																		$vec3 position [0,0,50]
+																		$quat rotation [1,0,0,0]
+																		$vec3 scale [1,1,1]
+																		$bool visible 1
+																		$bool static 0
+																	}
+																	$string type "pfm_actor"
+																},
+																{
+																	$string uniqueId "bccd81b1-47b0-4ce8-b32a-8645bfb434b4"
+																	"properties"
+																	{
+																		$uint32 lightmapMode 1
+																		$string resolution "2048x2048"
+																		$float lightIntensityFactor 1
+																		$uint32 sampleCount 20000
+																	}
+																	$string type "pfm_baked_lighting"
+																},
+																{
+																	$string uniqueId "2f03af37-ad27-4c91-912f-4f39dc5387f7"
+																	"properties"
+																	{
+																		$string lightmapDataCache ""
+																	}
+																	$string type "light_map_data_cache"
+																},
+																{
+																	$string uniqueId "16a25efd-8b72-4e61-b92d-be9ba336dede"
+																	"properties"
+																	{
+																		$float exposure 1
+																		$string lightmapMaterial ""
+																	}
+																	$string type "light_map"
+																},
+																{
+																	$string uniqueId "5a296590-802d-4166-8c96-3c004b489026"
+																	"properties"
+																	{
+																		$vec3 minBounds [0,0,0]
+																		$vec3 maxBounds [0,0,0]
+																		$bool showDebugBounds 0
+																	}
+																	$string type "pfm_cuboid_bounds"
+																},
+																{
+																	$string uniqueId "52f8ce97-2e67-4f00-b147-e9f9a0cfb2ef"
+																	"properties"
+																	{
+
+																	}
+																	$string type "pfm_region_carver"
+																}
+															]
+														}
+													]
+													$bool visible 1
+													$array groups [element;0][]
+												},
+												{
+													$string name "actors"
+													$string uniqueId "dda7bd91-fb4b-43a4-bb24-150be1789e6b"
+													$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+													$array actors [element;1][
+														{
+															$string name "actor01"
+															$string uniqueId "71aedecb-4a7d-4b20-aba9-de55ad06c639"
+															$array components [element;10][
+																{
+																	$string uniqueId "26e05463-bfbe-4833-8da4-6461773ba9f9"
+																	"properties"
+																	{
+																		$vec3 position [0,0,0]
+																		$quat rotation [1,0,0,0]
+																		$bool visible 1
+																		$vec3 scale [1,1,1]
+																		$bool static 0
+																	}
+																	$string type "pfm_actor"
+																},
+																{
+																	$string uniqueId "2b694a4f-4dda-461d-9d9d-16f86165d9ef"
+																	"properties"
+																	{
+																		$float flexControllerScale 1
+																		$bool flexControllerLimitsEnabled 1
+																		"materialOverrides"
+																		{
+
+																		}
+																	}
+																	$string type "pfm_model"
+																},
+																{
+																	$string uniqueId "547c3768-1767-497f-a5f7-20bc2ab1a4be"
+																	"properties"
+																	{
+																		$string model "test/vroid_v110_male_v1_1_3 - copy/vroid_v110_male_v1.1.3 - copy"
+																		$uint32 skin 0
+																		"bodyGroup"
+																		{
+																			$uint32 Face 0
+																			$uint32 Body 0
+																			$uint32 Hair001 0
+																		}
+																	}
+																	$string type "model"
+																},
+																{
+																	$string uniqueId "9f516ba2-2899-417d-b14b-96cf9afd7102"
+																	"properties"
+																	{
+																		$bool castShadows 1
+																	}
+																	$string type "render"
+																},
+																{
+																	$string uniqueId "59cd7e6e-ecbd-43ca-a068-aa8359de5f55"
+																	"properties"
+																	{
+																		"bone"
+																		{
+																			"J_Bip_R_Little2"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [1.3888,-0.0032,-0.0892]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_UpperLeg"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [3.4144,-1.7601,0.1618]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_C_Chest"
+																			{
+																				$vec3 position [-0,5.0011,-0.135]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"Root"
+																			{
+																				$vec3 position [0,0,0]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegBack"
+																			{
+																				$vec3 position [-0.0791,0.1526,5.2387]
+																				$vec3 scale [1,1,1]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_L_ToeBase"
+																			{
+																				$vec3 position [0.1148,-3.0622,-5.5169]
+																				$vec3 scale [1,1,1]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_L_Little3"
+																			{
+																				$vec3 position [-0.8011,-0.0031,-0.04]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-89d78044bc474df78d9af65645e9a012-1"
+																			{
+																				$vec3 position [3.0947,3.7783,-3.033]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Thumb3"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.9305,-0.0667,-0.8597]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_LowerLeg"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [0.2876,-15.5365,0.267]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_C_Hips"
+																			{
+																				$vec3 position [0.02,40.5053,-0.506]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-e41844db1bca474b984b22bb0da2000a-1"
+																			{
+																				$vec3 position [-0.288,0.9533,3.8601]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegBack_end 1"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [0.4684,-5.2798,0.9952]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-962ca7e6dffd43f1a4a67366f70be5e6-2"
+																			{
+																				$vec3 position [-0.4967,-0.6821,-0.4837]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_C_Spine"
+																			{
+																				$vec3 position [-0,2.3043,-0.5539]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegSide_end"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [1.0761,-4.7878,0.1022]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-5bf3601bc9944a4fa772549c9c67380f-2"
+																			{
+																				$vec3 position [0.7009,-0.9421,-0.3841]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_C_UpperChest"
+																			{
+																				$vec3 position [0,4.7635,0.6482]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Foot"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [-0.4757,-18.2266,0.9436]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegSide"
+																			{
+																				$vec3 position [4.5688,-0.4356,0.071]
+																				$vec3 scale [1,1,1]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-e41844db1bca474b984b22bb0da2000a-3"
+																			{
+																				$vec3 position [0.2322,-0.9902,-0.8701]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Sec_L_Bust1"
+																			{
+																				$vec3 position [-2.3794,-0.3211,-3.0525]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Sec_L_Bust2"
+																			{
+																				$vec3 position [-1.0356,0.2477,-2.0132]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Sec_R_Bust1"
+																			{
+																				$vec3 position [2.3794,-0.3211,-3.0525]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Ring1"
+																			{
+																				$vec3 position [-2.946,0.3136,0.3548]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Ring2"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-1.5182,-0.0072,-0.0988]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Sec_R_Bust2"
+																			{
+																				$vec3 position [1.0356,0.2477,-2.0132]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_LowerLeg"
+																			{
+																				$vec3 position [-0.2876,-15.5365,0.267]
+																				$vec3 scale [1,1,1]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-5bc61df07f474ac5a9f1d60863892299-2"
+																			{
+																				$vec3 position [-0.1809,-1.5301,0.1229]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperArmOutside_end"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [6.6547,1.4104,-0.6778]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegFront"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [0.1004,-0.6109,-5.844]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_C_Neck"
+																			{
+																				$vec3 position [0,5.8541,1.6974]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperLegFront"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-0.1004,-0.6109,-5.844]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Ring3"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-0.8769,-0.0033,-0.0444]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_C_Head"
+																			{
+																				$vec3 position [-0,3.6733,-0.4251]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-6db76c980d4c44b893fda6a67c50aac1-1"
+																			{
+																				$vec3 position [-3.8749,4.2673,-1.8792]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_ToeBase"
+																			{
+																				$vec3 position [-0.1148,-3.0622,-5.5169]
+																				$vec3 scale [1,1,1]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_L_LowerArm"
+																			{
+																				$vec3 position [-8.7825,-0.3941,-0.0574]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-5bc61df07f474ac5a9f1d60863892299-1"
+																			{
+																				$vec3 position [-2.5395,4.6135,-3.5505]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-5bc61df07f474ac5a9f1d60863892299-3"
+																			{
+																				$vec3 position [0.3329,-1.4879,-0.0401]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Foot"
+																			{
+																				$vec3 scale [1,1,1]
+																				$vec3 position [0.4757,-18.2266,0.9436]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Adj_L_FaceEye"
+																			{
+																				$vec3 position [-0.7198,2.4881,-0.8257]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-962ca7e6dffd43f1a4a67366f70be5e6-1"
+																			{
+																				$vec3 position [2.0215,0.432,2.1595]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Hand"
+																			{
+																				$vec3 position [-9.9587,-0.047,-0.8229]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-962ca7e6dffd43f1a4a67366f70be5e6-3"
+																			{
+																				$vec3 position [-0.5364,-0.7733,-0.1462]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Adj_R_FaceEye"
+																			{
+																				$vec3 position [0.7198,2.4881,-0.8257]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperLegBack"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.0791,0.1526,5.2387]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Thumb2"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [1.4471,-0.1219,-1.4644]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Index1"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [2.819,0.2868,-1.1109]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-45780f656cad4bb1a42e0c5079cf5d29-1"
+																			{
+																				$vec3 position [3.8058,2.7036,-0.7553]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Little3"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.801,-0.0031,-0.04]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-45780f656cad4bb1a42e0c5079cf5d29-2"
+																			{
+																				$vec3 position [-0.3873,-1.4262,0.0996]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Index2"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [1.4685,-0.0123,-0.1071]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-45780f656cad4bb1a42e0c5079cf5d29-3"
+																			{
+																				$vec3 position [-0.8168,-1.2283,-0.0113]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Index3"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.9049,-0.034,-0.0429]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Little1"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [2.8034,0.3279,1.0587]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-6db76c980d4c44b893fda6a67c50aac1-2"
+																			{
+																				$vec3 position [0.085,-2.0021,0.041]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-6db76c980d4c44b893fda6a67c50aac1-3"
+																			{
+																				$vec3 position [0.8474,-1.7389,-0.2347]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Hand"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [9.9587,-0.047,-0.8229]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-51750dc851914bcc95b1292b31f4f29e-1"
+																			{
+																				$vec3 position [-3.8685,3.5189,-0.856]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Index3"
+																			{
+																				$vec3 position [-0.9049,-0.034,-0.0429]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-51750dc851914bcc95b1292b31f4f29e-2"
+																			{
+																				$vec3 position [0.3653,-1.8276,0.0979]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperArmOutside_end"
+																			{
+																				$vec3 position [-6.7061,1.1819,-0.3084]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Index1"
+																			{
+																				$vec3 position [-2.819,0.2868,-1.1109]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-51750dc851914bcc95b1292b31f4f29e-3"
+																			{
+																				$vec3 position [1.0004,-1.5305,-0.2303]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-5bf3601bc9944a4fa772549c9c67380f-1"
+																			{
+																				$vec3 position [-2.6627,1.044,1.924]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-5bf3601bc9944a4fa772549c9c67380f-3"
+																			{
+																				$vec3 position [0.4546,-0.8215,-0.7938]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-afdfb0febab443d39c27f925bfbce69d-1"
+																			{
+																				$vec3 position [-0.1149,4.763,-4.5113]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-cac5e11f9023454aab89ab4a86f8b2c1-1"
+																			{
+																				$vec3 position [1.0469,0.7219,3.456]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Thumb1"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.0944,-0.4571,-0.7084]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-afdfb0febab443d39c27f925bfbce69d-2"
+																			{
+																				$vec3 position [0.1687,-1.3808,0.007]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-cac5e11f9023454aab89ab4a86f8b2c1-2"
+																			{
+																				$vec3 position [-0.2893,-0.8228,-0.7611]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_UpperArm"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [4.9662,-0.7067,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-afdfb0febab443d39c27f925bfbce69d-3"
+																			{
+																				$vec3 position [0.338,-1.3076,0.3305]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-cac5e11f9023454aab89ab4a86f8b2c1-3"
+																			{
+																				$vec3 position [-0.3351,-0.8602,-0.6761]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperArmInside"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [4.0517,-4.0882,0.0349]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Shoulder"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.9911,4.6769,1.3262]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-89d78044bc474df78d9af65645e9a012-2"
+																			{
+																				$vec3 position [-0.1453,-1.3843,-0.039]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-89d78044bc474df78d9af65645e9a012-3"
+																			{
+																				$vec3 position [-0.6703,-1.2094,0.0158]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Middle2"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [1.6362,-0.0141,-0.1129]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Little1"
+																			{
+																				$vec3 position [-2.8034,0.3279,1.0587]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperArmInside_end"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [4.1767,0.8152,-0.3344]
+																				$vec3 scale [1,1,1]
+																			}
+																			"00bc98e6f978815227007109537446317ab7edb3.transferable_HairJoint-e41844db1bca474b984b22bb0da2000a-2"
+																			{
+																				$vec3 position [0.041,-0.9916,-0.9193]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Shoulder"
+																			{
+																				$vec3 position [-0.9911,4.6769,1.3262]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Middle3"
+																			{
+																				$vec3 position [1.0103,-0.0081,-0.0552]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_UpperArm"
+																			{
+																				$vec3 position [-4.9662,-0.7067,-0]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Ring1"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [2.946,0.3136,0.3548]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperArmInside"
+																			{
+																				$vec3 position [-4.3526,-3.8265,0.341]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_UpperLeg"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-3.4144,-1.7601,0.1618]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Ring2"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [1.5182,-0.0072,-0.0988]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperArmInside_end"
+																			{
+																				$vec3 position [-4.2035,0.6711,-0.1032]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Ring3"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [0.8769,-0.0033,-0.0444]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperArmOutside"
+																			{
+																				$vec3 position [-0.8175,1.9863,0.3714]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperLegFront_end"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-0.4079,-4.9114,-0.0314]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Index2"
+																			{
+																				$vec3 position [-1.4685,-0.0123,-0.1071]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Little2"
+																			{
+																				$vec3 position [-1.3888,-0.0032,-0.0891]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_Middle1"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [2.9224,0.3007,-0.3375]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Thumb1"
+																			{
+																				$vec3 position [-0.0944,-0.4571,-0.7084]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Thumb2"
+																			{
+																				$vec3 position [-1.4475,-0.1229,-1.4639]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_R_LowerArm"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [8.7825,-0.3941,-0.0573]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Thumb3"
+																			{
+																				$vec3 position [-0.9307,-0.0673,-0.8595]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Middle1"
+																			{
+																				$vec3 position [-2.9224,0.3007,-0.3375]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegBack_end"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-0.4684,-5.2798,0.9952]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Middle2"
+																			{
+																				$vec3 position [-1.6362,-0.0141,-0.1129]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperLegSide"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-4.5688,-0.4356,0.071]
+																				$vec3 scale [1,1,1]
+																			}
+																			"J_Bip_L_Middle3"
+																			{
+																				$vec3 position [-1.0103,-0.0081,-0.0552]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_L_TopsUpperLegSide_end"
+																			{
+																				$quat rotation [1,0,0,0]
+																				$vec3 position [-1.0762,-4.7878,0.1022]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperArmOutside"
+																			{
+																				$vec3 position [0.3591,1.5899,0.105]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																			"57404e3635e204cb8b191063dc96b26f7308f3b4.transferable_J_Sec_R_TopsUpperLegFront_end"
+																			{
+																				$vec3 position [0.4079,-4.9114,-0.0314]
+																				$quat rotation [1,0,0,0]
+																				$vec3 scale [1,1,1]
+																			}
+																		}
+																	}
+																	$string type "animated"
+																},
+																{
+																	$string uniqueId "484d2bf2-fb60-4978-aa5b-918ad9b2e605"
+																	"properties"
+																	{
+																		$float blinkDuration 0.2
+																		$vec3 viewTarget [0,0,0]
+																		$bool blinkingEnabled 1
+																		$float localViewTargetFactor 1
+																	}
+																	$string type "eye"
+																},
+																{
+																	$string uniqueId "a564242d-82c9-4b8c-9a4a-a5fb656d9bac"
+																	"properties"
+																	{
+																		"flexController"
+																		{
+																			$float _browInnerUp_Extra 0
+																			$float Fcl_EYE_Highlight_Hide 0
+																			$float Fcl_MTH_Angry 0
+																			$float Fcl_ALL_Angry 0
+																			$float Fcl_MTH_Surprised 0
+																			$float _browOuterUp_Extra_L 0
+																			$float Fcl_ALL_Surprised 0
+																			$float Fcl_MTH_Fun 0
+																			$float _mouthPress+CatMouth-ex 0
+																			$float browInnerUp 0
+																			$float Fcl_ALL_Fun 0
+																			$float Fcl_EYE_Close 0
+																			$float Fcl_ALL_Joy 0
+																			$float _mouthPress+DuckMouth 0
+																			$float Fcl_MTH_Joy 0
+																			$float Fcl_ALL_Sorrow 0
+																			$float Fcl_HA_Short_Up 0
+																			$float Fcl_MTH_Sorrow 0
+																			$float Fcl_BRW_Fun 0
+																			$float eyeBlinkRight 0
+																			$float _mouthRollUpper+CenterDown 0
+																			$float Fcl_EYE_Joy_L 0
+																			$float Fcl_EYE_Fun 0
+																			$float Fcl_BRW_Angry 0
+																			$float Fcl_EYE_Angry 0
+																			$float Fcl_BRW_Joy 0
+																			$float eyeBlinkLeft 0
+																			$float _eyeIrisMoveBack_L 0
+																			$float Fcl_EYE_Joy 0
+																			$float Fcl_BRW_Sorrow 0
+																			$float Fcl_HA_Fung3_Low 0
+																			$float Fcl_EYE_Sorrow 0
+																			$float Fcl_BRW_Surprised 0
+																			$float Fcl_EYE_Surprised 0
+																			$float Fcl_EYE_Close_R 0
+																			$float _mouthPress+DuckMouth_R 0
+																			$float Fcl_HA_Short_Low 0
+																			$float Fcl_EYE_Close_L 0
+																			$float mouthLowerDownLeft 0
+																			$float mouthDimpleLeft 0
+																			$float _mouthPress+DuckMouth_L 0
+																			$float eyeLookDownLeft 0
+																			$float Fcl_EYE_Joy_R 0
+																			$float Fcl_EYE_Spread 0
+																			$float eyeLookOutLeft 0
+																			$float cheekPuff 0
+																			$float mouthPucker 0
+																			$float browOuterUpLeft 0
+																			$float Fcl_EYE_Iris_Hide 0
+																			$float _eyeIrisMoveBack_R 0
+																			$float Fcl_HA_Fung1_Up 0
+																			$float Fcl_MTH_Up 0
+																			$float eyeLookUpRight 0
+																			$float Fcl_MTH_Down 0
+																			$float _mouthFunnel+SharpenLips 0
+																			$float Fcl_MTH_Small 0
+																			$float _mouthPress+CatMouth 0
+																			$float Fcl_MTH_Large 0
+																			$float Fcl_MTH_I 0
+																			$float Fcl_MTH_SkinFung 0
+																			$float eyeLookInRight 0
+																			$float Fcl_MTH_SkinFung_R 0
+																			$float Fcl_MTH_SkinFung_L 0
+																			$float Fcl_MTH_A 0
+																			$float Fcl_MTH_U 0
+																			$float Fcl_MTH_E 0
+																			$float mouthRollLower 0
+																			$float Fcl_MTH_O 0
+																			$float cheekSquintRight 0
+																			$float eyeLookUpLeft 0
+																			$float Fcl_HA_Hide 0
+																			$float mouthFrownRight 0
+																			$float Fcl_HA_Fung1 0
+																			$float Fcl_HA_Fung1_Low 0
+																			$float Fcl_HA_Fung2 0
+																			$float Fcl_HA_Fung2_Low 0
+																			$float mouthStretchRight 0
+																			$float jawRight 0
+																			$float Fcl_HA_Fung2_Up 0
+																			$float Fcl_HA_Fung3 0
+																			$float mouthClose 0
+																			$float Fcl_HA_Fung3_Up 0
+																			$float Fcl_HA_Short 0
+																			$float browDownLeft 0
+																			$float browDownRight 0
+																			$float tongueOut 0
+																			$float browOuterUpRight 0
+																			$float eyeLookInLeft 0
+																			$float mouthSmileLeft 0
+																			$float eyeLookDownRight 0
+																			$float eyeLookOutRight 0
+																			$float eyeSquintLeft 0
+																			$float eyeSquintRight 0
+																			$float mouthUpperUpLeft 0
+																			$float eyeWideLeft 0
+																			$float mouthUpperUpRight 0
+																			$float eyeWideRight 0
+																			$float mouthFunnel 0
+																			$float cheekSquintLeft 0
+																			$float noseSneerLeft 0
+																			$float noseSneerRight 0
+																			$float mouthShrugUpper 0
+																			$float jawOpen 0
+																			$float jawForward 0
+																			$float mouthStretchLeft 0
+																			$float jawLeft 0
+																			$float mouthLeft 0
+																			$float mouthRight 0
+																			$float mouthRollUpper 0
+																			$float mouthShrugLower 0
+																			$float mouthSmileRight 0
+																			$float mouthFrownLeft 0
+																			$float mouthLowerDownRight 0
+																			$float mouthDimpleRight 0
+																			$float mouthPressLeft 0
+																			$float _eyeSquint+LowerUp_L 0
+																			$float mouthPressRight 0
+																			$float _eyeSquint+LowerUp_R 0
+																			$float _browOuterUp_Extra_R 0
+																		}
+																	}
+																	$string type "flex"
+																},
+																{
+																	$string uniqueId "3415fc94-a03d-469a-ab47-411ef4ed7471"
+																	"properties"
+																	{
+																		"rigConfig"
+																		{
+																			$array bones [element;8][
+																				{
+																					$string name "J_Bip_R_Shoulder"
+																					$bool locked 1
+																				},
+																				{
+																					$string name "J_Bip_R_UpperArm"
+																					$bool locked 0
+																				},
+																				{
+																					$string name "J_Bip_R_LowerArm"
+																					$bool locked 0
+																				},
+																				{
+																					$string name "J_Bip_R_Hand"
+																					$bool locked 0
+																				},
+																				{
+																					$string name "J_Bip_L_Shoulder"
+																					$bool locked 1
+																				},
+																				{
+																					$string name "J_Bip_L_UpperArm"
+																					$bool locked 0
+																				},
+																				{
+																					$string name "J_Bip_L_LowerArm"
+																					$bool locked 0
+																				},
+																				{
+																					$string name "J_Bip_L_Hand"
+																					$bool locked 0
+																				}
+																			]
+																			$array controls [element;4][
+																				{
+																					$string bone "J_Bip_R_LowerArm"
+																					$string type "Drag"
+																					$float rigidity 5
+																					$float maxForce -1
+																				},
+																				{
+																					$string bone "J_Bip_R_Hand"
+																					$string type "OrientedDrag"
+																					$float rigidity 10
+																					$float maxForce -1
+																				},
+																				{
+																					$string bone "J_Bip_L_LowerArm"
+																					$string type "Drag"
+																					$float rigidity 5
+																					$float maxForce -1
+																				},
+																				{
+																					$string bone "J_Bip_L_Hand"
+																					$string type "OrientedDrag"
+																					$float rigidity 10
+																					$float maxForce -1
+																				}
+																			]
+																			$array constraints [element;6][
+																				{
+																					$string bone0 "J_Bip_R_Shoulder"
+																					$string type "BallSocket"
+																					$string bone1 "J_Bip_R_UpperArm"
+																					$float rigidity 1000
+																					$float maxForce -1
+																					$string axis "Z"
+																					$ang minAngles [1,1,1]
+																					$stransform offsetPose [[0,0,0][1,0,0,0][1,1,1]]
+																					$ang maxAngles [-1,-1,-1]
+																				},
+																				{
+																					$string bone0 "J_Bip_R_UpperArm"
+																					$string type "BallSocket"
+																					$string bone1 "J_Bip_R_LowerArm"
+																					$float rigidity 1000
+																					$float maxForce -1
+																					$string axis "Z"
+																					$ang minAngles [1,1,1]
+																					$stransform offsetPose [[0,0,0][1,0,0,0][1,1,1]]
+																					$ang maxAngles [-1,-1,-1]
+																				},
+																				{
+																					$string bone0 "J_Bip_R_LowerArm"
+																					$string type "BallSocket"
+																					$string bone1 "J_Bip_R_Hand"
+																					$float rigidity 1000
+																					$float maxForce -1
+																					$string axis "Z"
+																					$ang minAngles [1,1,1]
+																					$stransform offsetPose [[0,0,0][1,0,0,0][1,1,1]]
+																					$ang maxAngles [-1,-1,-1]
+																				},
+																				{
+																					$string bone0 "J_Bip_L_Shoulder"
+																					$string type "BallSocket"
+																					$string bone1 "J_Bip_L_UpperArm"
+																					$float rigidity 1000
+																					$float maxForce -1
+																					$string axis "Z"
+																					$ang minAngles [1,1,1]
+																					$stransform offsetPose [[0,0,0][1,0,0,0][1,1,1]]
+																					$ang maxAngles [-1,-1,-1]
+																				},
+																				{
+																					$string bone0 "J_Bip_L_UpperArm"
+																					$string type "BallSocket"
+																					$string bone1 "J_Bip_L_LowerArm"
+																					$float rigidity 1000
+																					$float maxForce -1
+																					$string axis "Z"
+																					$ang minAngles [1,1,1]
+																					$stransform offsetPose [[0,0,0][1,0,0,0][1,1,1]]
+																					$ang maxAngles [-1,-1,-1]
+																				},
+																				{
+																					$string bone0 "J_Bip_L_LowerArm"
+																					$string type "BallSocket"
+																					$string bone1 "J_Bip_L_Hand"
+																					$float rigidity 1000
+																					$float maxForce -1
+																					$string axis "Z"
+																					$ang minAngles [1,1,1]
+																					$stransform offsetPose [[0,0,0][1,0,0,0][1,1,1]]
+																					$ang maxAngles [-1,-1,-1]
+																				}
+																			]
+																		}
+																		$string rigConfigFile ""
+																		"control"
+																		{
+																			"J_Bip_R_LowerArm"
+																			{
+																				$vec3 position [14.7598,56.1504,0.7221]
+																			}
+																			"J_Bip_R_Hand"
+																			{
+																				$vec3 position [24.7185,56.1034,-0.1007]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_L_Hand"
+																			{
+																				$vec3 position [-24.6784,56.1034,-0.1008]
+																				$quat rotation [1,0,0,0]
+																			}
+																			"J_Bip_L_LowerArm"
+																			{
+																				$vec3 position [-14.7197,56.1504,0.7221]
+																			}
+																		}
+																	}
+																	$string type "ik_solver"
+																},
+																{
+																	$string uniqueId "0d6ec7c5-b96e-4a71-804c-7f632b41c7f0"
+																	"properties"
+																	{
+
+																	}
+																	$string type "pfm_fbik"
+																},
+																{
+																	$string type "mp_pose_solver"
+																	"properties"
+																	{
+																		$string mediaSource "data/mediapipe/example.mov"
+																	}
+																	$string uniqueId "a904e0c8-2ded-44cb-9fa3-82ed6b26e7c6"
+																}
+															]
+														}
+													]
+													$bool visible 1
+													$array groups [element;0][]
+												},
+												{
+													$array groups [element;0][]
+													$array actors [element;1][
+														{
+															$array components [element;6][
+																{
+																	$string type "pfm_actor"
+																	"properties"
+																	{
+																		$vec3 position [44.8054,83.084,-30.3661]
+																		$quat rotation [0.8616,0.2167,-0.4451,0.1119]
+																		$bool visible 1
+																		$vec3 scale [1,1,1]
+																		$bool static 0
+																	}
+																	$string uniqueId "d5162889-e6fc-4a01-b612-d6235d0199da"
+																},
+																{
+																	$string type "pfm_light_spot"
+																	"properties"
+																	{
+
+																	}
+																	$string uniqueId "7f6b89df-9791-457e-b0fb-62bcab79e794"
+																},
+																{
+																	$string type "light"
+																	"properties"
+																	{
+																		$uint8 intensityType 0
+																		$float intensity 17.4468
+																		$bool castShadows 0
+																		$float falloffExponent 1
+																		$bool baked 0
+																	}
+																	$string uniqueId "eee92bdf-2397-417a-8dd8-fabdea5e6b34"
+																},
+																{
+																	$string type "light_spot"
+																	"properties"
+																	{
+																		$float blendFraction 0.6596
+																		$float outerConeAngle 60
+																		$float coneStartOffset 0
+																	}
+																	$string uniqueId "549e64f1-890d-426b-9e5c-bedc73bbc80c"
+																},
+																{
+																	$string type "radius"
+																	"properties"
+																	{
+																		$float radius 1000
+																	}
+																	$string uniqueId "6233e3ed-367d-4cf8-ad26-a9754a4b96a2"
+																},
+																{
+																	$string type "color"
+																	"properties"
+																	{
+																		$vec3 color [1,0.7882,0.6588]
+																		$float alpha 1
+																	}
+																	$string uniqueId "9414e690-ff2a-4605-ae77-2198e5432a97"
+																}
+															]
+															$string uniqueId "f35c40fe-175e-4d36-9ddb-29ad5acb9133"
+															$string name "spot_light"
+														}
+													]
+													$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+													$string uniqueId "69ae0e8c-7a41-40e7-89a0-af39fe6e5cdb"
+													$string name "lighting"
+													$bool visible 1
+												}
+											]
+										}
+										$string uniqueId "e42314dd-74d9-4aab-b530-fe838b1df0de"
+										$string camera "d16610ec-5ff6-48c7-b801-134947562345"
+										"timeFrame"
+										{
+											$float offset 0
+											$float duration 60
+											$float scale 1
+											$float start 0
+										}
+										$int32 activeBookmarkSet 0
+										$float fadeIn 0
+										$float fadeOut 0
+										$string name "shot1"
+									}
+								]
+								$array overlayClips [element;0][]
+								$bool muted 0
+								$array animationClips [element;0][]
+								$float volume 1
+								$string uniqueId "d1c8adb1-9066-4750-9657-3d1df4b83a15"
+								$array audioClips [element;0][]
+							}
+						]
+					}
+				]
+				$array bookmarkSets [element;0][]
+				"scene"
+				{
+					$string name ""
+					$string uniqueId "07c381d4-50d3-4412-a9af-62d31ae4fde2"
+					$stransform transform [[0,0,0][1,0,0,0][1,1,1]]
+					$array actors [element;0][]
+					$bool visible 1
+					$array groups [element;0][]
+				}
+				$string uniqueId "8b9c1aa4-17a8-4776-a39e-69c2b4565f6b"
+				$string camera ""
+				"timeFrame"
+				{
+					$float offset 0
+					$float duration 60
+					$float scale 1
+					$float start 0
+				}
+				$int32 activeBookmarkSet 0
+				$float fadeIn 0
+				$float fadeOut 0
+				$string name "test_mediapipe"
+			}
+		]
+		"settings"
+		{
+			$float playheadOffset 0
+			$bool readOnly 0
+			"workCamera"
+			{
+				$float fov 90
+				$transform pose [[9.5597,65.1466,-24.8858][0.9807,0.1647,-0.1039,0.0174]]
+			}
+			$string layout "cfg/pfm/layouts/default.udm"
+			$string cameraView "Work"
+			"renderSettings"
+			{
+				$string denoiseMode "detailed"
+				$uint32 frameRate 24
+				$float exposure 50
+				$bool renderPlayer 0
+				$bool cameraFrustumCullingEnabled 1
+				$bool pvsCullingEnabled 1
+				$bool progressiveRefinementEnabled 0
+				$bool transparentSky 0
+				$bool stereoscopic 1
+				$string previewQuality "low"
+				$string cameraType "0"
+				$string panoramaType "equirectangular"
+				$string viewportMode "360_left_eye"
+				$uint32 tileSize 512
+				$string outputFormat "png"
+				$bool preCalculateLight 0
+				$uint32 height 720
+				$bool progressive 1
+				$uint32 samples 40
+				$uint32 supersamplingFactor 2
+				$string mode "combined"
+				$bool renderGameObjects 1
+				$float panoramaRange 180
+				$uint32 width 1280
+				$bool renderWorld 1
+				$string deviceType "gpu"
+				$string renderEngine "cycles"
+				$uint32 numberOfFrames 1
+				$string preset "standard"
+				$uint32 maxTransparencyBounces 128
+				$float lightIntensityFactor 1
+				$float emissionStrength 1
+				$string colorTransform "filmic-blender"
+				$string colorTransformLook "Medium Contrast"
+			}
+			$string mapName "empty"
+		}
+		$string uniqueId "c50ac29a-0798-4b7e-b42b-9fed70a015e0"
+		$string activeClip "8b9c1aa4-17a8-4776-a39e-69c2b4565f6b"
+	}
+}
+$string assetType "PFMP"
+$uint32 assetVersion 1
