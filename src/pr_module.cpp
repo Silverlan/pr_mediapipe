@@ -13,8 +13,11 @@ extern "C" {
 
 DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 {
-	auto path = util::Path::CreatePath(util::get_program_path()) + "modules/mediapipe/";
-	mpw::init(path.GetString().c_str(), "/");
+	std::string mediapipeDir;
+	if(!FileManager::FindAbsolutePath("modules/mediapipe/", mediapipeDir))
+		return;
+	mediapipeDir = util::Path::CreatePath(mediapipeDir).GetString();
+	mpw::init(mediapipeDir.c_str(), "/");
 
 	auto &libMediapipe = lua.RegisterLibrary("mediapipe");
 	libMediapipe[luabind::def("get_blend_shape_name", &mpw::get_blend_shape_name)];
@@ -134,7 +137,7 @@ DLLEXPORT void pragma_initialize_lua(Lua::Interface &lua)
 
 	classDef.def("GetFaceGeometryCount", &mpw::MotionCaptureManager::GetFaceGeometryCount);
 	classDef.def(
-	  "GetFaceGeometry", +[](mpw::MotionCaptureManager & manager, size_t index) -> std::optional < std::tuple<std::vector<Vector3>, std::vector<uint32_t>, std::array<float,16>>> {
+	  "GetFaceGeometry", +[](mpw::MotionCaptureManager &manager, size_t index) -> std::optional<std::tuple<std::vector<Vector3>, std::vector<uint32_t>, std::array<float, 16>>> {
 		  mpw::MeshData meshData;
 		  auto res = manager.GetFaceGeometry(index, meshData);
 		  if(!res)
