@@ -296,7 +296,7 @@
 																	$string uniqueId "547c3768-1767-497f-a5f7-20bc2ab1a4be"
 																	"properties"
 																	{
-																		$string model "test/vroid_v110_male_v1_1_3 - copy/vroid_v110_male_v1.1.3 - copy"
+																		$string model "characters/generic_anime_char_male"
 																		$uint32 skin 0
 																		"bodyGroup"
 																		{
